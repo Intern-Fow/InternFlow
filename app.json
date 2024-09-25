@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "ShareIO",
+    "slug": "ShareIO",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/appicon.jpg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "READ_PHONE_STATE",
+        "READ_EXTERNAL_STORAGE",
+        "READ_INTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "AUDIO_RECORDING",
+        "VIBRATE",
+        "WAKE_LOCK"
+    ]
+    },
+    "web": {
+      "favicon": "./assets/appicon.jpg"
+    },
+
+    "plugins": [
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ]
+    ]
+    
+  }
+}
